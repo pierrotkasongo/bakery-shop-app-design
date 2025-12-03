@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="primary">
-    <ion-item lines="none">
+    <ion-item lines="none" class="ion-margin-top">
       <ion-label>Location
         <p>
           <ion-icon name="location"></ion-icon> 
@@ -32,5 +32,18 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <app-list-heading></app-list-heading>
+  <div class="container">
+    <app-list-heading heading="Special Offers"></app-list-heading>
+    <app-banner [bannerImages]="banners()"></app-banner>
+    @if(categories().length > 0) {
+      <app-list-heading heading="Categories"></app-list-heading>
+      <app-categories [categories]="categories()"></app-categories>
+    }
+    @if(products().length > 0) {
+      <app-list-heading heading="Featured Products"></app-list-heading>
+      <!-- <app-product-list-horizontal [products]="products()"></app-product-list-horizontal > -->
+      <!-- <app-categories [categories]="categories()"></app-categories> -->
+    }
+  </div>
+  
 </ion-content>
