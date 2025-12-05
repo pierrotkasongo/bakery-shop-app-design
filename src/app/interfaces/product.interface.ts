@@ -9,5 +9,7 @@ export interface Product {
     image: string;
     saller_id: number;
     default_price: number | null;
+    cut_price: number | null;
+    type: string;
     varieties : Variety [];
 }

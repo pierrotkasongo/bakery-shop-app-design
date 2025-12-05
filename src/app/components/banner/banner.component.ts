@@ -11,7 +11,7 @@ import { Banner } from 'src/app/interfaces/banner.interface';
 })
 export class BannerComponent  implements OnInit {
 
-  swiperModule = [IonicSlides]
+  swiperModules = [IonicSlides]
 
   bannerImages = input<Banner[]>([]);
   constructor() { }

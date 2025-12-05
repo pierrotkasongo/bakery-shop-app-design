@@ -1,3 +1,4 @@
-<p>
-  veg-nonveg-indicator works!
-</p>
+<div class="box" [ngClass]="{ veg: type() === 'veg', 'non-veg': type()
+=== 'non-veg', }">
+  <div class="bullet-dot"></div>
+</div>

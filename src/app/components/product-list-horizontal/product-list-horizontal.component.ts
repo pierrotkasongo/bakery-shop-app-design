@@ -12,8 +12,8 @@ import { ProductComponent } from "../product/product.component";
 })
 export class ProductListHorizontalComponent  implements OnInit {
 
-  swiperModules = [IonicSlides];
   products = input<Product[]>();
+  swiperModules = [IonicSlides];
 
   constructor() { }
 
